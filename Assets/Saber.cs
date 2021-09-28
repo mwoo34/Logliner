@@ -7,6 +7,8 @@ public class Saber : MonoBehaviour
     public LayerMask layer;
     private Vector3 previousPos;
     public Canvas[] images;
+    public GameObject[] imgs;
+    private int hp_count = 5;
     
     void Start()
     {
@@ -23,7 +25,7 @@ public class Saber : MonoBehaviour
             {
                 Destroy(hit.transform.gameObject);
             }
-            else
+            else if (hit.transform.forward.z > 16.0f)
             {
                 DestroyImg();
             }
@@ -33,6 +35,8 @@ public class Saber : MonoBehaviour
 
     void DestroyImg()
     {
-        //images.
+        if (hp_count > 0) {
+            Destroy(imgs[hp_count - 1]);
+        }
     }
 }

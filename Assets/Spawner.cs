@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
             timer -= beat;
         }
         timer += Time.deltaTime;
-
+        
         //if ()
     }
     
