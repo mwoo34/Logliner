@@ -54,7 +54,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -110,6 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d5f22481469454cb8d6e493c4e4954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 0}
+  ca: {fileID: 0}
+  sp: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &5776646296583145273
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +166,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

@@ -25,19 +25,7 @@ public class Saber : MonoBehaviour
             {
                 Destroy(hit.transform.gameObject);
             }
-            else if (hit.transform.localPosition.z > 16.0f)
-            {
-                Destroy(hit.transform.gameObject);
-                //DestroyImg();
-            }
         }
         previousPos = transform.position;
-    }
-
-    void DestroyImg()
-    {
-        if (hp_count > 0) {
-            Destroy(imgs[hp_count - 1]);
-        }
     }
 }

@@ -21,24 +21,24 @@ public class Cube : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += Time.deltaTime * transform.forward * 2;
         if (transform.localPosition.z > 16.0f) {
             //DestroyHeart();
-            //DestroyCube();
+            DestroyCube();
         }
     }
 
-    // void DestroyHeart() {
-    //     if (hp_count > 0) {
-    //         hearts[hp_count - 1].GetComponent<SpriteRenderer>().sprite = sp;
-    //         hp_count -= 1;
-    //     }   
-    // }
+    void DestroyHeart() {
+        // if (hp_count > 0) {
+        //     hearts[hp_count - 1].GetComponent<SpriteRenderer>().sprite = sp;
+        //     hp_count -= 1;
+        // }   
+    }
 
-    // void DestroyCube() {
-    //     Destroy(this.gameObject);
-    // }
+    void DestroyCube() {
+        
+        Destroy(this.gameObject);
+    }
 }
